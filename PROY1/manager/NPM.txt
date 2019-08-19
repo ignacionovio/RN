@@ -1,0 +1,8 @@
+redux
+firebase
+eslint
+redux-thunk
+react-redux ?
+router-flux
+lodash
+react-native-communications
