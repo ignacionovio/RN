@@ -5,14 +5,18 @@ import {
     StyleSheet
 } from 'react-native'
 
-export default class Items extends Component {
-    render(){
+class Items extends Component {
+    render() {
         return (
-
-        )
+            <View>
+                <Text> Items </Text>
+            </View> 
+        );
     }
 }
 
 const styles = StyleSheet.create({
     
 })
+
+export default Items;

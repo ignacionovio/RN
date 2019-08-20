@@ -5,18 +5,27 @@ import {
     StyleSheet
 } from 'react-native'
 
+import NavBar from './NavBar'
+import Input from './Input'
+import Items from './Items'
+
 class Index extends Component {
     render() {
         return (
-            <View>
-                <Text> Texto </Text>
+            <View style={styles.container}>
+                <NavBar/>
+                <Input/>
+                <Items/>
             </View> 
         );
     }
 }
 
 const styles = StyleSheet.create({
-    
+    container: {
+        flex: 1,
+        backgroundColor: '#F6E3CE'
+    }
 })
 
 export default Index;
