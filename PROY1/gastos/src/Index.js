@@ -10,13 +10,36 @@ import Input from './Input'
 import Items from './Items'
 
 class Index extends Component {
+    constructor(props){
+        super(props)
+
+        this.state =  {
+            title: '',
+            date: ''
+        }
+
+        this.onChangeTitle = this.onChangeTitle.bind(this)
+        this.onDateChange = this.onDateChange.bind(this)
+    }
+
+    onChangeTitle(title){
+        this.setState({title})
+    }
+
+    onDateChange(date){
+        this.setState({date})
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <NavBar/>
-                <Input/>
+                <Input
+                    onChangeTitle={this.onChangeTitle}
+                    onDateChange={this.onDateChange}
+                />
                 <Items/>
-            </View> 
+            </View>
         );
     }
 }
